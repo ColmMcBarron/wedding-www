@@ -1,2 +1,4 @@
-wedding-www
+Wedding site (English)
 ===========
+                     
+Website for my Wedding ;-)

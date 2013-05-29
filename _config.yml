@@ -1,0 +1,4 @@
+safe: true
+lsi: false
+destination: _site
+pygments: true
