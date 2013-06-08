@@ -239,7 +239,7 @@ section#accommodation {
 	section#accommodation .content .column2 {
 		width: 300px;
 		position: absolute;
-		top: 320px;
+		top: 330px;
 		left: 70px;
 	}
 	
@@ -279,11 +279,38 @@ section#guide {
    
 	section#guide .content {
 		background: url("../images/guide.png") no-repeat center top;
-		height: 600px;
-		margin-top:-300px; 
+		height: 360px;
+		margin-top:-180px; 
 		width: 800px;
 		margin-left: -400px;
-	}
+	} 
+	
+		section#guide .section1 {
+			padding: 150px 100px 0;
+		}
+		
+		section#guide .section2 {  
+			padding: 30px 100px 0;
+		}
+		
+		section#guide .section3 {  
+			padding: 30px 100px 0;
+		}
+		
+		section#guide h2 {
+			font-weight: bold;
+			font-size: 18px;
+			padding: 0 0 5px 0;
+		} 
+		
+		section#guide h2 a {
+			color: #f4f6f5;
+		}
+		
+		section#guide p {
+			color: #e8f0ea;
+		}
+		
 
 section#contact {
    background: #e1e1e1;  
@@ -293,8 +320,17 @@ section#contact {
 		background: url("../images/contact.png") no-repeat center top;
 		height: 600px;
 		margin-top:-300px; 
-		width: 800px;
-		margin-left: -400px;
+		width: 400px;
+		margin-left: -200px;
+	} 
+	
+	section#contact .contact-content {
+		padding: 200px 60px 0 60px; 
+		text-align: center;
+	}                               
+	  
+	section#contact .contact-content strong {
+		font-weight: bold;
 	}
 
   
@@ -324,6 +360,7 @@ section#accommodation h3,
 section#travel p,  
 section#accommodation p,
 section#schedule p,
+section#contact p,
 .ajax-content p {
 	font-size: 15px;
 	color: #555;
@@ -335,4 +372,20 @@ section#travel a,
 section#accommodation a,
 .ajax-content a {
 	color: #000;
-}              
+} 
+
+.ajax-content table {
+	font-size: 13px;
+	width: 100%;
+}                   
+
+
+.ajax-content table th,
+.ajax-content table td {
+	padding: 3px;
+	text-align: left;
+}                     
+
+.ajax-content table th {
+	font-weight: bold;
+}
