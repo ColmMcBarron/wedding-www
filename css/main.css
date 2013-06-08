@@ -60,56 +60,279 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-              
 
 body {
 	background: #faf9ed;    
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;      
 }
-
-/* header */
-
+              
+html,body {
+	height:100%;
+	margin:0;
+	padding:0;
+}
+  
 header {
-	background: #FFF;
-	border-bottom: 1px solid #dddddd;
+	position: fixed;
+	height: 60px;   
 	width: 100%;
-}  
-
-header > div {
-	max-width: 940px;
-	margin: auto;
-	padding: 15px;
-}  
-
-header #logo {
-	background: url("../images/logo.png") no-repeat top left;
-	height: 53px;
-	width: 600px;
-	display: block;
-	margin: 10px 0;
+	background: #382900;
+	filter:alpha(opacity=70);
+    opacity:0.7;
+	z-index: 100;
 }
 
-	header #logo span {
-		display: none;
+	header nav {
+		width: 940px;
+		margin: 21px auto; 
+		text-align: center;
 	}
 	
-	header nav {      
-		width: 100%;  
-		height: 35px;
-	}               
-		
-		header nav ul {
-			float: left;
+		header nav ul,
+		header nav ul li {
+			display: inline; 
+			margin: 0 10px;
 		}
 		
-			header nav ul li {
-            	float: left;
+		header nav ul li a {
+			color: #FFF;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 14px;
+		} 
+
+ 	
+section {
+   min-height: 100%;
+   position: relative;
+}          
+
+	section > .content {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 900px;
+		margin-left: -450px;
+	}
+ 
+section#countdown {
+	background: #fefdf6;
+}            
+
+	section#countdown .content {
+		background: url("../images/m+c.png") no-repeat center top;
+		height: 400px;
+		margin-top:-200px; 
+		width: 600px;
+		margin-left: -300px;
+	}  
+	
+	section#countdown .countdown_show4 {
+		position: absolute; 
+		top: 340px; 
+		width: 320px;
+		left: 136px;  
+		height: 100px;        
+	}                        
+	
+	
+	section#countdown .countdown_show3 {
+		position: absolute; 
+		top: 340px; 
+		width: 240px;
+		left: 176px;  
+		height: 100px;
+	}
+	
+	section#countdown .countdown_section {
+		float: left;  
+		width: 80px;
+		text-align: center;
+		color: #999;    
+		font-size: 17px;
+	}
+	
+	
+	section#countdown .countdown_section .countdown_amount {
+		color: #777;             
+		font-size: 22px;   
+		padding: 0;
+		line-height: 24px;
+	}
+
+section#venue {
+	background: #008623;
+} 
+
+                  
+	section#venue .content {
+		background: url("../images/the_venue.png") no-repeat center top;
+		height: 400px;
+		margin-top:-200px; 
+		width: 900px;
+		margin-left: -450px;
+	}
+	
+		section#venue .content p {
+			text-align: center;
+			color: #FFF;
+			padding: 100px 0 0 0;
+			font-size: 16px;
+			line-height: 18px;
+		}                         
+		
+		
+			section#venue .content p a {
+				color: #FFF;
 			}
-			
-				header nav ul li a {
-	            	float: left;
-					padding: 10px;
-					text-decoration: none;
-					color: #333;
-					font-size: 14px;
-				}
+
+section#travel {
+	background: #e1e1e1;
+}                       
+
+	section#travel .content {
+		background: url("../images/travel.png?_=1") no-repeat center top;
+		height: 400px;
+		margin-top:-200px; 
+		width: 800px;
+		margin-left: -400px;
+	}
+	
+	section#travel .content .column1,
+	section#travel .content .column2 {
+		width: 300px;
+		position: absolute;
+		top: 100px;
+		left: 70px;
+	}
+	
+	section#travel .content .column1 {
+	}
+	
+	section#travel .content .column2 {
+	   	left: 450px; 
+	}  
+	
+	
+
+section#accommodation {
+	background: #f3eec4;
+}            
+
+	section#accommodation .content {
+		background: url("../images/accommodation.png") no-repeat center top;
+		height: 600px;
+		margin-top:-300px; 
+		width: 800px;
+		margin-left: -400px;
+	}
+	
+	section#accommodation .content .top {
+		width: 680px;
+		position: absolute;
+		top: 140px;
+		left: 70px;
+	}        
+	
+	section#accommodation .content .column1,
+	section#accommodation .content .column2 {
+		width: 300px;
+		position: absolute;
+		top: 320px;
+		left: 70px;
+	}
+	
+	section#accommodation .content .column1 {
+	}
+	
+	section#accommodation .content .column2 {
+	   	left: 450px; 
+	} 
+	
+	
+
+section#schedule {
+	background: #fefdf6;
+}  
+
+	section#schedule .content {
+		background: url("../images/schedule.png") no-repeat center top;
+		height: 300px;
+		margin-top:-150px; 
+		width: 550px;
+		margin-left: -275px;
+	}    
+	
+	section#schedule .schedule-content {
+		padding: 100px 0 0 0;
+	}
+	
+	section#schedule p strong {
+		font-weight: bold;
+		color: #333;
+	}
+
+section#guide {
+	background: #008623;
+}            
+   
+	section#guide .content {
+		background: url("../images/guide.png") no-repeat center top;
+		height: 600px;
+		margin-top:-300px; 
+		width: 800px;
+		margin-left: -400px;
+	}
+
+section#contact {
+   background: #e1e1e1;  
+} 
+
+     section#contact .content {
+		background: url("../images/contact.png") no-repeat center top;
+		height: 600px;
+		margin-top:-300px; 
+		width: 800px;
+		margin-left: -400px;
+	}
+
+  
+.ajax-content {
+	width: 500px;
+}  
+                  
+
+section#travel h2,
+section#accommodation h2,
+.ajax-content h2 {
+	font-size: 18px;
+	color: #333;
+	font-weight: bold;
+	padding-bottom: 5px;
+}                    
+                 
+section#travel h3,  
+section#accommodation h3,
+.ajax-content h3 {
+	font-size: 15px;
+	color: #444;        
+	padding: 5px 0;  
+	font-weight: bold;
+}              
+
+section#travel p,  
+section#accommodation p,
+section#schedule p,
+.ajax-content p {
+	font-size: 15px;
+	color: #555;
+	padding: 0 0 10px;
+	line-height: 17px;
+}
+
+section#travel a, 
+section#accommodation a,
+.ajax-content a {
+	color: #000;
+}              
